@@ -2,7 +2,6 @@
 
 /// <reference path="../App.js" />
 
-(function () {
   "use strict";
 
 	class MailItem {
@@ -35,6 +34,8 @@
 
 					console.log('debugfilter', 'loadProps');
           loadProps(Office.context.mailbox.item);
+					$('#action-button').click(openDialog);
+					$('#action-button2').click(openDialogAsIframe);
       });
   };
 
@@ -137,4 +138,12 @@
       loadMessageProps(item);
     }
   }
-})();
+
+	function errorHandler(error) {
+         showNotification(error);
+     }
+
+ // Display notifications in message banner at the top of the task pane.
+ function showNotification(content) {
+	 app.showNotification('Debug', content);
+ }

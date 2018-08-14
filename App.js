@@ -6,6 +6,7 @@ var app = (function () {
     "use strict";
 
     var app = {};
+		var prevHeader;
 
     // Common initialization function (to be called from each page)
     app.initialize = function () {
@@ -19,14 +20,19 @@ var app = (function () {
             '</div>');
 
         $('#notification-message-close').click(function () {
-            $('#notification-message').hide();
+					prevHeader = null;
+          $('#notification-message').hide();
         });
 
 
         // After initialization, expose a common notification function
         app.showNotification = function (header, text) {
+						const $notifBodyElem = $('#notification-message-body');
+						const prevText = prevHeader === header ? `${$notifBodyElem.html()}<br />` : ''
+						prevHeader = header;
+
             $('#notification-message-header').text(header);
-            $('#notification-message-body').text(text);
+            $notifBodyElem.html(`${prevText}${text}`);
             $('#notification-message').slideDown('fast');
         };
     };
