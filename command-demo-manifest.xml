@@ -259,8 +259,8 @@
                     <SourceLocation resid="readTaskPaneUrl" />
                   </Action>
                 </Control>
-								<!-- Open Task pane button -->
-								<Control xsi:type="Button" id="msgReadOpenPaneButton2">
+                <!-- Open Task pane button -->
+                <Control xsi:type="Button" id="msgReadOpenPaneButton2">
                   <Label resid="openPaneReadButtonLabel" />
                   <Supertip>
                     <Title resid="openPaneReadSuperTipTitle" />
@@ -300,7 +300,7 @@
       <bt:Urls>
         <bt:Url id="functionFile" DefaultValue="https://localhost:8443/FunctionFile/Functions.html"/>
         <bt:Url id="readTaskPaneUrl" DefaultValue="https://localhost:8443/AllPropsView/AllProps.html"/>
-				<bt:Url id="readOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
+        <bt:Url id="readOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
         <bt:Url id="composeTaskPaneUrl" DefaultValue="https://localhost:8443/InsertTextPane/InsertText.html"/>
       </bt:Urls>
       <bt:ShortStrings>
@@ -322,12 +322,12 @@
         <bt:String id="funcReadButtonLabel" DefaultValue="Get subject"/>
         <bt:String id="menuReadButtonLabel" DefaultValue="Get property"/>
         <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
-				<bt:String id="openPaneReadButtonLabel" DefaultValue="Open task pane"/>
+        <bt:String id="openPaneReadButtonLabel" DefaultValue="Open task pane"/>
 
         <bt:String id="funcReadSuperTipTitle" DefaultValue="Gets the subject of the message or appointment"/>
         <bt:String id="menuReadSuperTipTitle" DefaultValue="Choose a property to get"/>
         <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
-				<bt:String id="openPaneReadSuperTipTitle" DefaultValue="Open task pane"/>
+        <bt:String id="openPaneReadSuperTipTitle" DefaultValue="Open task pane"/>
 
         <bt:String id="menuItem1ReadLabel" DefaultValue="Get item class"/>
         <bt:String id="menuItem2ReadLabel" DefaultValue="Get date time created"/>
@@ -347,7 +347,7 @@
         <bt:String id="funcReadSuperTipDescription" DefaultValue="Gets the subject of the message or appointment and displays it in the info bar. This is an example of a function button."/>
         <bt:String id="menuReadSuperTipDescription" DefaultValue="Gets the selected property of the message or appointment and displays it in the info bar. This is an example of a drop-down menu button."/>
         <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties of the message or appointment. This is an example of a button that opens a task pane."/>
-				<bt:String id="openPaneReadSuperTipDescription" DefaultValue="Open task pane"/>
+        <bt:String id="openPaneReadSuperTipDescription" DefaultValue="Open task pane"/>
 
         <bt:String id="menuItem1ReadTip" DefaultValue="Gets the item class of the message or appointment and displays it in the info bar." />
         <bt:String id="menuItem2ReadTip" DefaultValue="Gets the date and time the message or appointment was created and displays it in the info bar." />
@@ -466,7 +466,7 @@
                     </Action>
                   </Control>
 
-									<!-- Task pane button -->
+                  <!-- Task pane button -->
                   <Control xsi:type="Button" id="msgComposeOpenPaneButton2">
                     <Label resid="openPaneComposeButtonLabel" />
                     <Supertip>
@@ -480,7 +480,7 @@
                     </Icon>
                     <Action xsi:type="ShowTaskpane">
                       <SourceLocation resid="composeOpenTaskPaneUrl" />
-											<SupportsPinning>true</SupportsPinning>
+                      <SupportsPinning>true</SupportsPinning>
                     </Action>
                   </Control>
                 </Group>
@@ -585,23 +585,23 @@
                       <SupportsPinning>true</SupportsPinning>
                     </Action>
                   </Control>
-									<!-- Open Task pane button -->
-									<Control xsi:type="Button" id="msgReadOpenPaneButton2">
-	                  <Label resid="openPaneReadButtonLabel" />
-	                  <Supertip>
-	                    <Title resid="openPaneReadSuperTipTitle" />
-	                    <Description resid="openPaneReadSuperTipDescription" />
-	                  </Supertip>
-	                  <Icon>
-	                    <bt:Image size="16" resid="green-icon-16" />
-	                    <bt:Image size="32" resid="green-icon-32" />
-	                    <bt:Image size="80" resid="green-icon-80" />
-	                  </Icon>
-	                  <Action xsi:type="ShowTaskpane">
-	                    <SourceLocation resid="readOpenTaskPaneUrl" />
-											<SupportsPinning>true</SupportsPinning>
-	                  </Action>
-	                </Control>
+                  <!-- Open Task pane button -->
+                  <Control xsi:type="Button" id="msgReadOpenPaneButton2">
+                    <Label resid="openPaneReadButtonLabel" />
+                    <Supertip>
+                      <Title resid="openPaneReadSuperTipTitle" />
+                      <Description resid="openPaneReadSuperTipDescription" />
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="green-icon-16" />
+                      <bt:Image size="32" resid="green-icon-32" />
+                      <bt:Image size="80" resid="green-icon-80" />
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="readOpenTaskPaneUrl" />
+                      <SupportsPinning>true</SupportsPinning>
+                    </Action>
+                  </Control>
 
                   <Control xsi:type="Button" id="msgReadRestPaneButton">
                     <Label resid="restpaneReadButtonLabel" />
@@ -711,9 +711,9 @@
         <bt:Urls>
           <bt:Url id="functionFile" DefaultValue="https://localhost:8443/FunctionFile/Functions.html"/>
           <bt:Url id="readTaskPaneUrl" DefaultValue="https://localhost:8443/AllPropsView/AllProps.html"/>
-					<bt:Url id="readOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
+          <bt:Url id="readOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
           <bt:Url id="composeTaskPaneUrl" DefaultValue="https://localhost:8443/InsertTextPane/InsertText.html"/>
-					<bt:Url id="composeOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
+          <bt:Url id="composeOpenTaskPaneUrl" DefaultValue="https://localhost:8443/OpenTaskPaneView/OpenTaskPane.html"/>
           <bt:Url id="restTaskPaneUrl" DefaultValue="https://localhost:8443/RestCaller/RestCaller.html"/>
           <bt:Url id="restMobileTaskPaneUrl" DefaultValue="https://localhost:8443/RestCaller/mobile/RestCallerMobile.html"/>
         </bt:Urls>
@@ -723,12 +723,12 @@
           <bt:String id="funcComposeButtonLabel" DefaultValue="Insert default message"/>
           <bt:String id="menuComposeButtonLabel" DefaultValue="Insert message"/>
           <bt:String id="paneComposeButtonLabel" DefaultValue="Insert custom message"/>
-					<bt:String id="openPaneComposeButtonLabel" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneComposeButtonLabel" DefaultValue="Open task pane"/>
 
           <bt:String id="funcComposeSuperTipTitle" DefaultValue="Inserts the default message"/>
           <bt:String id="menuComposeSuperTipTitle" DefaultValue="Choose a message to insert"/>
           <bt:String id="paneComposeSuperTipTitle" DefaultValue="Enter your own text to insert"/>
-					<bt:String id="openPaneComposeSuperTipTitle" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneComposeSuperTipTitle" DefaultValue="Open task pane"/>
 
           <bt:String id="menuItem1ComposeLabel" DefaultValue="Hello World!"/>
           <bt:String id="menuItem2ComposeLabel" DefaultValue="Add-in commands are cool!"/>
@@ -738,13 +738,13 @@
           <bt:String id="funcReadButtonLabel" DefaultValue="Get subject"/>
           <bt:String id="menuReadButtonLabel" DefaultValue="Get property"/>
           <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
-					<bt:String id="openPaneReadButtonLabel" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneReadButtonLabel" DefaultValue="Open task pane"/>
           <bt:String id="restpaneReadButtonLabel" DefaultValue="Test REST Calls"/>
 
           <bt:String id="funcReadSuperTipTitle" DefaultValue="Gets the subject of the message or appointment"/>
           <bt:String id="menuReadSuperTipTitle" DefaultValue="Choose a property to get"/>
           <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
-					<bt:String id="openPaneReadSuperTipTitle" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneReadSuperTipTitle" DefaultValue="Open task pane"/>
           <bt:String id="restpaneReadSuperTipTitle" DefaultValue="Open REST Test pane"/>
 
           <bt:String id="menuItem1ReadLabel" DefaultValue="Get item class"/>
@@ -756,7 +756,7 @@
           <bt:String id="funcComposeSuperTipDescription" DefaultValue="Inserts text into body of the message or appointment. This is an example of a function button."/>
           <bt:String id="menuComposeSuperTipDescription" DefaultValue="Inserts your choice of text into body of the message or appointment. This is an example of a drop-down menu button."/>
           <bt:String id="paneComposeSuperTipDescription" DefaultValue="Opens a pane where you can enter text to insert in the body of the message or appointment. This is an example of a button that opens a task pane."/>
-					<bt:String id="openPaneComposeTipDescription" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneComposeTipDescription" DefaultValue="Open task pane"/>
 
           <bt:String id="menuItem1ComposeTip" DefaultValue="Inserts Hello World! into the body of the message or appointment." />
           <bt:String id="menuItem2ComposeTip" DefaultValue="Inserts Add-in commands are cool! into the body of the message or appointment." />
@@ -766,7 +766,7 @@
           <bt:String id="funcReadSuperTipDescription" DefaultValue="Gets the subject of the message or appointment and displays it in the info bar. This is an example of a function button."/>
           <bt:String id="menuReadSuperTipDescription" DefaultValue="Gets the selected property of the message or appointment and displays it in the info bar. This is an example of a drop-down menu button."/>
           <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties of the message or appointment. This is an example of a button that opens a task pane."/>
-					<bt:String id="openPaneReadSuperTipDescription" DefaultValue="Open task pane"/>
+          <bt:String id="openPaneReadSuperTipDescription" DefaultValue="Open task pane"/>
           <bt:String id="restpaneReadSuperTipDescription" DefaultValue="Opens a pane allowing you to test various REST API calls using the access token returned by the server."/>
 
           <bt:String id="menuItem1ReadTip" DefaultValue="Gets the item class of the message or appointment and displays it in the info bar." />

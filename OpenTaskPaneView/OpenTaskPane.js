@@ -4,38 +4,38 @@
 
   "use strict";
 
-	class MailItem {
-		constructor(item) {
-			this.item = item;
-		}
-		get(prop) {
-			return new Promise((resolve, reject) => {
-				if (!this.item[prop] || !this.item[prop].getAsync) return resolve(this.item[prop]);
-				this.item[prop].getAsync(res => {
-					resolve(res && res.value);
-				});
-			});
-		}
-	}
+  class MailItem {
+    constructor(item) {
+      this.item = item;
+    }
+    get(prop) {
+      return new Promise((resolve, reject) => {
+        if (!this.item[prop] || !this.item[prop].getAsync) return resolve(this.item[prop]);
+        this.item[prop].getAsync(res => {
+          resolve(res && res.value);
+        });
+      });
+    }
+  }
 
   // The Office initialize function must be run each time a new page is loaded
   Office.initialize = function (reason) {
-			console.log('debugfilter', 'office.initialize');
+      console.log('debugfilter', 'office.initialize');
       $(document).ready(function () {
-					console.log('debugfilter', 'document.ready');
+          console.log('debugfilter', 'document.ready');
           app.initialize();
 
-					console.log('debugfilter', 'isPersistenceSupported', isPersistenceSupported());
+          console.log('debugfilter', 'isPersistenceSupported', isPersistenceSupported());
           if (isPersistenceSupported()) {
             // Set up ItemChanged event
-						// Office.EventType.ItemChanged === 'olkItemSelectedChanged'
+            // Office.EventType.ItemChanged === 'olkItemSelectedChanged'
             Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem);
           }
 
-					console.log('debugfilter', 'loadProps');
+          console.log('debugfilter', 'loadProps');
           loadProps(Office.context.mailbox.item);
-					$('#action-button').click(openDialog);
-					$('#action-button2').click(openDialogAsIframe);
+          $('#action-button').click(openDialog);
+          $('#action-button2').click(openDialogAsIframe);
       });
   };
 
@@ -98,7 +98,7 @@
 
   // Load properties from a Message object
   function loadMessageProps(item) {
-		const mailItem = new MailItem(item);
+    const mailItem = new MailItem(item);
     $('#message-props').show();
 
     mailItem.get('attachments').then(attachments => $('#attachments').html(buildAttachmentsString(attachments)));
@@ -139,11 +139,11 @@
     }
   }
 
-	function errorHandler(error) {
+  function errorHandler(error) {
          showNotification(error);
      }
 
  // Display notifications in message banner at the top of the task pane.
  function showNotification(content) {
-	 app.showNotification('Debug', content);
+   app.showNotification('Debug', content);
  }

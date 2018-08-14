@@ -4,7 +4,7 @@
 var dialog;
 
 function dialogCallback(asyncResult) {
-	console.log('debugfilter', 'dialogCallback.asyncResult', JSON.stringify(asyncResult, null, 2))
+  console.log('debugfilter', 'dialogCallback.asyncResult', JSON.stringify(asyncResult, null, 2))
     if (asyncResult.status == "failed") {
 
         // In addition to general system errors, there are 3 specific errors for
@@ -25,7 +25,7 @@ function dialogCallback(asyncResult) {
         }
     }
     else {
-				showNotification(`Dialog open status: ${asyncResult.status}`);
+        showNotification(`Dialog open status: ${asyncResult.status}`);
 
         dialog = asyncResult.value;
         /*Messages are sent by developers programatically from the dialog using office.context.ui.messageParent(...)*/
